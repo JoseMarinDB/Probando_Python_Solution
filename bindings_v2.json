@@ -1,0 +1,104 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "strQueueName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "in_AssetName",
+          "isExpression": true
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "in_Config(\"OrchestratorQueueName\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "row(\"Asset\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "row(\"OrchestratorAssetFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "in_Config(\"OrchestratorQueueName\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_Config(\"OrchestratorQueueFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "in_Config(\"OrchestratorQueueFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "Global_InternalTeamEmails",
+          "isExpression": false
+        },
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    }
+  ]
+}
